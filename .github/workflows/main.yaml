@@ -1,7 +1,7 @@
 name: Build and deploy Python app to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: 'folkmoz-devsecops'   # set this to your application's name
+  AZURE_WEBAPP_NAME: ${{ vars.AZURE_APP_NAME}}   # set this to your application's name
   PYTHON_VERSION: '3.9'               
 on:
   push:
